@@ -15,11 +15,12 @@
 		public function selectRoles()
 		{
 			$whereAdmin = "";
-			if($_SESSION['idUser'] != 1 ){
-				$whereAdmin = " and idrol != 1 ";
-			}
+			// if($_SESSION['idUser'] != 1 ){
+			// 	$whereAdmin = " and idrol != 1 ";
+			// }
 			//EXTRAE ROLES
-			$sql = "SELECT * FROM rol WHERE status != 0".$whereAdmin;
+			$sql = "SELECT * FROM rol WHERE status != 0";
+			// .$whereAdmin;
 			$request = $this->select_all($sql);
 			return $request;
 		}
@@ -27,9 +28,9 @@
 		public function selectRol(int $idrol)
 		{
 			$whereAdmin = "";
-			if($_SESSION['idUser'] != 1 ){
-				$whereAdmin = " and idrol != 1 ";
-			}
+			// if($_SESSION['idUser'] != 1 ){
+			// 	$whereAdmin = " and idrol != 1 ";
+			// }
 			//BUSCAR ROLE
 			$this->intIdrol = $idrol;
 			$sql = "SELECT * FROM rol WHERE idrol = $this->intIdrol";
@@ -79,10 +80,12 @@
 		    return $request;			
 		}
 
+
+		
 		public function deleteRol(int $idrol)
 		{
 			$this->intIdrol = $idrol;
-			$sql = "SELECT * FROM persona WHERE rolid = $this->intIdrol";
+			$sql = "SELECT * FROM usuario WHERE rol_ususario_id_rol_usa = $this->intIdrol";
 			$request = $this->select_all($sql);
 			if(empty($request))
 			{

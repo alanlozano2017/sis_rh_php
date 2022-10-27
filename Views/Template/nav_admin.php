@@ -26,6 +26,8 @@
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="<?= base_url(); ?>/usuarios"><i class="icon fa fa-circle-o"></i> Usuarios</a></li>
                 <li><a class="treeview-item" href="<?= base_url(); ?>/roles"><i class="icon fa fa-circle-o"></i> Roles</a></li>
+                <li><a class="treeview-item" href="<?= base_url(); ?>/modulos"><i class="icon fa fa-circle-o"></i> Modulos</a></li>
+
             </ul>
         </li>
         <?php } ?>

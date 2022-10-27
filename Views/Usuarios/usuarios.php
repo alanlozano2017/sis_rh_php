@@ -9,7 +9,7 @@
                 <?php if($_SESSION['permisosMod']['w']){ ?>
                 <button class="btn btn-primary" type="button" onclick="openModal();" ><i class="fas fa-plus-circle"></i> Nuevo</button>
                 <?php } ?>
-            </h1>
+                </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -26,10 +26,9 @@
                       <thead>
                         <tr>
                           <th>ID</th>
-                          <th>Nombres</th>
-                          <th>Apellidos</th>
+                          
                           <th>Email</th>
-                          <td>Telefono</td>
+                          
                           <td>Rol</td>
                           <td>Status</td>
                           <td>Acciones</td>
@@ -44,5 +43,6 @@
               </div>
             </div>
         </div>
+
     </main>
 <?php footerAdmin($data); ?>

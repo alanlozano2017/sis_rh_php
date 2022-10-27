@@ -1,7 +1,7 @@
 <?php 
 	require_once("Config/Config.php");
 	require_once("Helpers/Helpers.php");
-	$url = !empty($_GET['url']) ? $_GET['url'] : 'home/home';
+	$url = !empty($_GET['url']) ? $_GET['url'] : 'login';
 	$arrUrl = explode("/", $url);
 	$controller = $arrUrl[0];
 	$method = $arrUrl[0];

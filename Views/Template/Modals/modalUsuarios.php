@@ -10,36 +10,23 @@
       </div>
       <div class="modal-body">
             <form id="formUsuario" name="formUsuario" class="form-horizontal">
-              <input type="hidden" id="idUsuario" name="idUsuario" value="">
+              <input type="text" id="idUsuario" name="idUsuario" value="">
               <p class="text-primary">Todos los campos son obligatorios.</p>
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="txtIdentificacion">Identificación</label>
+                  <label for="txtIdentificacion">Persona Id</label>
                   <input type="text" class="form-control" id="txtIdentificacion" name="txtIdentificacion" required="">
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="txtNombre">Nombres</label>
-                  <input type="text" class="form-control valid validText" id="txtNombre" name="txtNombre" required="">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="txtApellido">Apellidos</label>
-                  <input type="text" class="form-control valid validText" id="txtApellido" name="txtApellido" required="">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="txtTelefono">Teléfono</label>
-                  <input type="text" class="form-control valid validNumber" id="txtTelefono" name="txtTelefono" required="" onkeypress="return controlTag(event);">
-                </div>
+               
+                
                 <div class="form-group col-md-6">
                   <label for="txtEmail">Email</label>
                   <input type="email" class="form-control valid validEmail" id="txtEmail" name="txtEmail" required="">
                 </div>
               </div>
-              <div class="form-row">
+              <!-- <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="listRolid">Tipo usuario</label>
                     <select class="form-control" data-live-search="true" id="listRolid" name="listRolid" required >
@@ -48,11 +35,24 @@
                 <div class="form-group col-md-6">
                     <label for="listStatus">Status</label>
                     <select class="form-control selectpicker" id="listStatus" name="listStatus" required >
-                        <option value="1">Activo</option>
+                        <option value="1" checked>Activo</option>
                         <option value="2">Inactivo</option>
                     </select>
                 </div>
-             </div>
+             </div> -->
+             <div class="form-group col-md-6">
+                    <label for="listRolid">Tipo usuario</label>
+                    <input type="text" class="form-control" id="listRolid" name="listRolid" required="" placeholder="2">
+                    <!-- <select class="form-control" data-live-search="true" id="listRolid" name="listRolid" value="2" required >
+                    </select> -->
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="listStatus">Status</label>
+                    <input type="number" class="form-control" id="listStatus" name="listStatus" required="" value="1">
+                    <!-- <label class="form-check-label" for="listStatus">Status</label>
+                    <input class="form-check-input" type="checkbox" id="listStatus" value="1" checked>
+                     -->
+                </div>
              <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="txtPassword">Password</label>
@@ -87,18 +87,7 @@
               <td>Identificación:</td>
               <td id="celIdentificacion">654654654</td>
             </tr>
-            <tr>
-              <td>Nombres:</td>
-              <td id="celNombre">Jacob</td>
-            </tr>
-            <tr>
-              <td>Apellidos:</td>
-              <td id="celApellido">Jacob</td>
-            </tr>
-            <tr>
-              <td>Teléfono:</td>
-              <td id="celTelefono">Larry</td>
-            </tr>
+            
             <tr>
               <td>Email (Usuario):</td>
               <td id="celEmail">Larry</td>
@@ -111,10 +100,7 @@
               <td>Estado:</td>
               <td id="celEstado">Larry</td>
             </tr>
-            <tr>
-              <td>Fecha registro:</td>
-              <td id="celFechaRegistro">Larry</td>
-            </tr>
+
           </tbody>
         </table>
       </div>

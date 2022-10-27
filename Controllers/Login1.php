@@ -20,7 +20,7 @@
 			$data['page_functions_js'] = "functions_login.js";
 			$this->views->getView($this,"login",$data);
 		}
- 
+
 		public function loginUser(){
 			//dep($_POST);
 			if($_POST){
@@ -35,7 +35,7 @@
 					}else{
 						$arrData = $requestUser;
 						if($arrData['status'] == 1){
-							$_SESSION['idUser'] = $arrData['id_usuario'];
+							$_SESSION['idUser'] = $arrData['idpersona'];
 							$_SESSION['login'] = true;
 
 							$arrData = $this->model->sessionLogin($_SESSION['idUser']);

@@ -14,12 +14,8 @@
           <div class="tile">
             <div class="tile-body">Dashboard</div>
           </div>
-          <?php 
-            /*$requestApi = CurlConnectionGet(URLPAYPAL."/v2/checkout/orders/1FR7854608373410U","application/json",getTokenPaypal());
-              dep($requestApi);
-            $requestPost = CurlConnectionPost(URLPAYPAL."/v2/payments/captures/3A418824P3757402W/refund","application/json",getTokenPaypal());
-            dep($requestPost);*/
-           ?>
+
+
         </div>
       </div>
     </main>
